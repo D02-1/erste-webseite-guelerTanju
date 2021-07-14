@@ -1,120 +1,102 @@
-* {
-    box-sizing: border-box;
-  }
+body
+{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 320;
+}
+
+.header 
+{
+  text-align: center;
+  background-color: rgb(255, 167, 2);
+  display: block;
+  overflow: hidden;
   
-  body 
+  
+}
+
+.menu
+{
+  width:calc(100% - 10px);
+  margin-left: 5px;
+  overflow: hidden;
+  display: flex;
+  background-color: dodgerblue;
+  
+  
+  
+
+
+}
+.menu i
+{
+  width:calc(100% - 10px);
+  font-size: 28px;
+  color: rgb(252, 252, 252);
+  margin-right: 2px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: block;
+  
+
+}
+
+a
+{
+ background-color: #2c2a2a;
+ margin: 2px;
+ padding: 10px;
+ font-size: 22px;
+ color: rgb(255, 255, 255);
+ border-radius: 45px;
+ 
+
+ 
+}
+
+.leftcolumn .rightcolumn .title
+{
+  background: #ff0202;
+  width: 100%;
+  display: block;
+  height: 25px;
+  line-height: 5px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 430px){
+
+   .menu i{
+     display: none;
+   }
+}
+
+@media (min-width: 768px)
+{
+  .menu a
   {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 10px;
-    background: #f1f1f1;
-  }
-  
-  
-  .header 
-  {
-    padding: 30px;
-    text-align: center;
-    background: rgb(209, 203, 203);
-  }
-  
-  .header h1 
-  {
-    font-size: 50px;
-  }
-  
-  
-  .topnav 
-  {
-    overflow: hidden;
-    background-color: rgb(38, 0, 255);
-  }
-  
-  
-  .topnav a 
-  {
-    float: left;
-    display: block;
-    color: #080808;
-    text-align: center;
-    padding: 14px 16px;
+    
+    margin-top: 10px;
     
   }
-  
-  
-  .topnav a:hover 
+  a
   {
-    background-color: #ddd;
-    color: black;
+    margin-right: 33.5%;
+    display: block;
+    
+    
   }
-  
+}
 
-  .leftcolumn 
-  {   
-    float: left;
-    width: 75%;
-  }
-  
- 
-  .rightcolumn 
-  {
-    float: left;
-    width: 25%;
-    background-color: #f1f1f1;
-    padding-left: 20px;
-  }
-  
-  
-  .fakeimg 
-  {
-    background-color: rgb(245, 6, 6);
-    width: 100%;
-    padding: 20px;
-  }
-  
-  
-  .card 
-  {
-    background-color: rgb(11, 34, 241);
-    padding: 20px;
-    margin-top: 20px;
-  }
-  
-  
-  .row:after 
-  {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-
-  .footer 
-  {
-    padding: 20px;
-    text-align: auto;
-    background: rgb(0, 0, 0);
-    margin-top: 5px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  h4{
-      color: red;
-  }
-  
-
-  @media screen and (max-width: 800px) 
-  {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
+@media (min-width: 1024px)
+{
+    .menu a
+    {
+      margin-top: 10px;
+      
     }
-  }
-  
-  
-  @media screen and (max-width: 400px) 
-  {
-    .topnav a {
-      float: none;
-      width: 100%;
+    .menu
+    {
+      justify-content: space-between;
     }
-  }
+   
+}
